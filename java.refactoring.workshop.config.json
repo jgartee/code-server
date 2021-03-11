@@ -1,0 +1,9 @@
+{
+    "image": "javaimage",
+    "repos":[ 
+	"https://github.com/gartee-john-PFG/WorkshopJavaRefactoring.git"
+    ],
+    "student_count": 8,
+    "setup_instructor": true,
+    "pwd": "abc123"
+}
