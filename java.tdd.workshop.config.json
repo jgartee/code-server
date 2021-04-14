@@ -1,7 +1,7 @@
 {
     "image": "java_jrc11_nginx",
     "repos":[ 
-	"https://github.com/gartee-john-PFG/WorkshopJavaApprovals.git"
+	"https://github.com/gartee-john-PFG/WorkshopJavaTDD.git"
     ],
     "student_count": 8,
     "setup_instructor": true,

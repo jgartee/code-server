@@ -1,5 +1,5 @@
 {
-    "image": "javaimage",
+    "image": "java_jrc11_nginx",
     "repos":[ 
 	"https://github.com/gartee-john-PFG/WorkshopJavaApprovals.git"
     ],
