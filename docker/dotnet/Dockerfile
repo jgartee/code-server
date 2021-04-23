@@ -43,6 +43,9 @@ ENV SHELL=/bin/bash
 RUN code-server --install-extension ms-dotnettools.csharp
 RUN code-server --install-extension ryanluker.vscode-coverage-gutters
 RUN code-server --install-extension formulahendry.dotnet-test-explorer
+RUN code-server --install-extension josefpihrt-vscode.roslynator
+RUN code-server --install-extension lacroixdavid1.vscode-format-context-menu
+RUN code-server --install-extension jmrog.vscode-nuget-package-manager
 
 # # FROM gradle:jre as gradle-base
 # FROM codercom/code-server:3.9.0
