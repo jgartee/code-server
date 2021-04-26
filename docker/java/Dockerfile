@@ -15,3 +15,4 @@ RUN service nginx restart
 USER 1000
 ENV SHELL=/bin/bash
 RUN code-server --install-extension vscjava.vscode-java-pack
+RUN code-server --install-extension ryanluker.vscode-coverage-gutters
