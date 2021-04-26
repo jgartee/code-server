@@ -1,0 +1,72 @@
+{
+    "files.autoSave": "onFocusChange",
+    "window.zoomLevel": 2,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "omnisharp.useGlobalMono": "never",
+    "settingsSync.ignoredExtensions": [
+
+    ],
+    "csharp.semanticHighlighting.enabled": true,
+    "csharp.suppressHiddenDiagnostics": false,
+    "csharp.unitTestDebuggingOptions": {
+
+    
+    },
+    "todo-tree.tree.showScanModeButton": false,
+    "dotnet-test-explorer.autoWatch": true,
+    "dotnet-test-explorer.pathForResultFile": "fail",
+    "dotnet-test-explorer.codeLensFailed": "failed",
+    "dotnet-test-explorer.codeLensPassed": "passed",
+    "dotnet-test-explorer.codeLensSkipped": "skipped",
+    "dotnet-test-explorer.testArguments": "/p:CollectCoverage=true /p:CoverletOutputFormat=lcov /p:CoverletOutput=./coverage/",
+    "coverage-gutters.coverageFileNames": [
+      
+      "jacocoTestReport.xml",
+      "lcov.info",
+      "cov.xml",
+      "coverage.xml",
+      "jacoco.xml",
+      "coverage.info"
+    ],
+    "coverage-gutters.manualCoverageFilePaths": [
+    ],
+    "dotnet-test-explorer.autoExpandTree": true,
+    "dotnet-test-explorer.testProjectPath": "**/*.Tests",
+    "AllAutocomplete.dontContributeToSelf": true,
+    "AllAutocomplete.languageWhitespace": {
+
+      "ruby": "[^\\w\\-_\\$:\\u0080-\\uFFFF]+",
+      "javascript": "[^\\w_\\$\\u0080-\\uFFFF]+",
+      "javascriptreact": "[^\\w_\\-\\$\\@\\u0080-\\uFFFF]+",
+      "typescript": "[^\\w_\\-\\$\\@\\u0080-\\uFFFF]+",
+      "php": "[^\\w_\\$\\u0080-\\uFFFF]+",
+      "css": "[^\\w\\-_\\$\\u0080-\\uFFFF]+",
+      "scss": "[^\\w\\-_\\$\\@\\u0080-\\uFFFF]+",
+      "html": "[^\\w\\-_\\$\\u0080-\\uFFFF]+",
+      "python": "[^\\w\\-_\\u0080-\\uFFFF]+",
+      "elm": "[^\\w\\-_\\u0080-\\uFFFF]+",
+      "cpp": "[^\\w_\\u0080-\\uFFFF]+",
+      "csv": "[^\\w_\\u0080-\\uFFFF \\:]+"
+    },
+    "omnisharp.enableDecompilationSupport": true,
+    "omnisharp.enableImportCompletion": true,
+    "omnisharp.enableRoslynAnalyzers": true,
+    "omnisharp.organizeImportsOnFormat": true,
+    "cSpell.allowCompoundWords": true,
+    "cSpell.ignorePaths": [
+      "**/package-lock.json",
+      "**/node_modules/**",
+      "**/vscode-extension/**",
+      "**/.git/objects/**",
+      ".vscode",
+      ".vscode-insiders",
+      ".history"
+    ],
+    "coverage-gutters.showLineCoverage": true,
+    "coverage-gutters.showRulerCoverage": true,
+    "editor.minimap.enabled": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "dotnet-test-explorer.enableTelemetry": false,
+    "AllAutocomplete.cycleOpenDocumentsOnLaunch": true
+}
