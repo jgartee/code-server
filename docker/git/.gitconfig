@@ -1,0 +1,47 @@
+[core]
+	autocrlf = input
+	safecrlf = warn
+	editor = 'code --wait'
+	ignorecase = false
+	
+[alias]
+	lg = log --oneline --graph --decorate --all
+	fa = fetch --all
+	co = checkout
+	ci = commit
+	c = commit
+	cm = commit -m 
+	st = status
+	br = branch
+	hist = log --pretty=format:'%C(green bold)%h %C(yellow)%ad %C(white bold)| %C(green)%s%C(auto)%d %C(cyan bold)[%an]' --graph --date=short --all
+  	r = remote -v
+	type = cat-file -t
+  	dump = cat-file -p
+	go = git checkout
+	dc = duet-commit
+	dr = duet-revert
+	dm = duet-merge
+	drb = rebase -i --exec 'git duet-commit --amend'
+	  
+[merge]
+	tool = vscode
+
+	[mergetool 'vscode']
+	cmd = code --wait $MERGED
+		
+[diff]
+    tool = vscode
+
+	[difftool 'vscode']
+	cmd = code --wait --diff $LOCAL $REMOTE
+
+[user]
+
+[push]
+	default = simple
+
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
