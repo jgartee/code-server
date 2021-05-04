@@ -1,7 +1,6 @@
 [core]
 	autocrlf = input
 	safecrlf = warn
-	editor = 'code --wait'
 	ignorecase = false
 	
 [alias]
@@ -23,18 +22,6 @@
 	dm = duet-merge
 	drb = rebase -i --exec 'git duet-commit --amend'
 	  
-[merge]
-	tool = vscode
-
-	[mergetool 'vscode']
-	cmd = code --wait $MERGED
-		
-[diff]
-    tool = vscode
-
-	[difftool 'vscode']
-	cmd = code --wait --diff $LOCAL $REMOTE
-
 [user]
 
 [push]
