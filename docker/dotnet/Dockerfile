@@ -37,7 +37,6 @@ ENV SHELL=/bin/bash
 RUN code-server --install-extension ms-dotnettools.csharp
 RUN code-server --install-extension ryanluker.vscode-coverage-gutters
 RUN code-server --install-extension formulahendry.dotnet-test-explorer
-# RUN code-server --install-extension josefpihrt-vscode.roslynator
 RUN code-server --install-extension lacroixdavid1.vscode-format-context-menu
-# RUN code-server --install-extension jmrog.vscode-nuget-package-manager
-RUN printf '{ "files.autoSave": "onFocusChange",\n "window.zoomLevel": 2,\n "editor.suggestSelection": "first",\n "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",\n "java.configuration.checkProjectSettingsExclusions": false,\n "java.project.importOnFirstTimeStartup": "automatic",\n "coverage-gutters.coverageFileNames": ["jacocoTestReport.xml"],\n "AllAutocomplete.dontContributeToSelf":true,\n "coverage-gutters.showLineCoverage": true,\n "coverage-gutters.showRulerCoverage": true,\n "editor.minimap.enabled": false,\n "diffEditor.ignoreTrimWhitespace": false,\n "AllAutocomplete.cycleOpenDocumentsOnLaunch": true }' > /home/coder/.local/share/code-server/User/settings.json
+RUN printf '{ "files.autoSave": "onFocusChange",\n "window.zoomLevel": 2,\n "editor.suggestSelection": "first",\n "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",\n "coverage-gutters.coverageFileNames": ["coverage.info"],\n "AllAutocomplete.dontContributeToSelf":true,\n "coverage-gutters.showLineCoverage": true,\n "coverage-gutters.showRulerCoverage": true,\n "editor.minimap.enabled": false,\n "diffEditor.ignoreTrimWhitespace": false,\n "AllAutocomplete.cycleOpenDocumentsOnLaunch": true }' > /home/coder/.local/share/code-server/User/settings.json
+RUN dotnet restore project/WorkshopCsharpApprovals/BeyondGildedRose/GildedRose.sln
