@@ -9,3 +9,5 @@ docker run -it -d --rm -p 0.0.0.0:$port:8080 \
  -u "$(id -u):$(id -g)" \
  -e "DOCKER_USER=$USER" \
  $image_name:latest
+
+sleep 5
