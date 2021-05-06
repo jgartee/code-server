@@ -2,6 +2,8 @@ import json
 import os
 import shutil
 import yaml
+import re
+
 
 ROOT = os.getcwd()
 PROJECT_ROOT = ROOT + '/workspace'
@@ -38,7 +40,20 @@ def setup_repos(directory, repos):
   os.chdir(directory)
   for repo in repos:
     os.system("git clone %s" % repo)
+    copy_vscode_config_files(repo)
 
+def copy_vscode_config_files(repo):
+    repoName = extract_workshop_name_from_repo(repo)
+    copy_custom_vscode_files_to_user_config_location(repoName)
+  
+def extract_workshop_name_from_repo(repo):
+    pattern = '(.*\/){1}(.*){1}(.git){1}'
+    return re.search(pattern, repo).group(2)
+
+def copy_custom_vscode_files_to_user_config_location(repoName):
+    if os.path.isfile("%s/tasks.json" % repoName):
+      os.system("mkdir .vscode")
+      os.system("cp %s/tasks.json ./.vscode/" % repoName)
 
 def setup_instructor(data):
   if data['setup_instructor']:

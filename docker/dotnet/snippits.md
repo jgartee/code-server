@@ -1,5 +1,14 @@
 # snippits for charp approvals workshop
 
+## before starting the workshop
+
+start docker containers
+go to each container and run
+```
+cd project/[gitRepo]/[solutionFolder]
+dotnet restore --disable-parallel
+```
+
 ## Run tests with coverage
 
 dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=lcov /p:CoverletOutput=./coverage/
