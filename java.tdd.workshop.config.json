@@ -1,5 +1,5 @@
 {
-    "image": "java_jrc11_nginx",
+    "image": "code-server-java.3.10.2",
     "repos":[ 
 	"https://github.com/gartee-john-PFG/WorkshopJavaTDD.git"
     ],
