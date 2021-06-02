@@ -17,7 +17,5 @@ RUN pwsh -Command Update-Help
 
 USER 1000
 ENV SHELL=/bin/bash
-RUN code-server --install-extension vscjava.vscode-java-pack
-RUN code-server --install-extension ryanluker.vscode-coverage-gutters
-RUN code-server --uninstall-extension vscjava.vscode-maven
+RUN code-server --install-extension ms-vscode.powershell
 RUN printf '{ "files.autoSave": "onFocusChange",\n "window.zoomLevel": 2,\n "editor.suggestSelection": "first",\n "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",\n "java.configuration.checkProjectSettingsExclusions": false,\n "java.project.importOnFirstTimeStartup": "automatic",\n "coverage-gutters.coverageFileNames": ["jacocoTestReport.xml"],\n "AllAutocomplete.dontContributeToSelf":true,\n "coverage-gutters.showLineCoverage": true,\n "coverage-gutters.showRulerCoverage": true,\n "editor.minimap.enabled": false,\n "diffEditor.ignoreTrimWhitespace": false,\n "AllAutocomplete.cycleOpenDocumentsOnLaunch": true,\n "java.semanticHighlighting.enabled": true }' > /home/coder/.local/share/code-server/User/settings.json
