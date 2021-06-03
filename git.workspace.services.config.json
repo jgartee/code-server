@@ -1,0 +1,9 @@
+{
+    "image": "code-server-git.3.9.0",
+    "repos":[ 
+	"https://github.com/gartee-john-PFG/WorkshopGitForBeginners.git"
+    ],
+    "student_count": 8,
+    "setup_instructor": true,
+    "pwd": "abc123"
+}
