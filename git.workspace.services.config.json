@@ -1,5 +1,5 @@
 {
-    "image": "code-server-git.3.9.0",
+    "image": "code-server-git.3.10.2",
     "repos":[ 
 	"https://github.com/gartee-john-PFG/WorkshopGitForBeginners.git"
     ],
