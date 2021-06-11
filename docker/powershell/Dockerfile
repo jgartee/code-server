@@ -16,11 +16,10 @@ ENV DOTNET_RUNNING_IN_CONTAINER=true \
     # No installer frontend interaction
     DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get update \
-    && apt-get -y install wget  \
+RUN apt-get update && apt-get -y install openjdk-11-jdk nginx wget \
     && wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb \
     &&  dpkg -i packages-microsoft-prod.deb \
-    && apt-get -y install openjdk-11-jdk nginx powershell \
+    && apt-get -y install powershell \
     && apt-get clean \  
     && rm -rf /var/lib/apt/lists/*
 
