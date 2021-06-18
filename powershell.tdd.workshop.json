@@ -1,0 +1,9 @@
+{
+    "image": "code-server-pwsh.3.10.2",
+    "repos":[ 
+	    "https://github.com/gartee-john-PFG/WorkshopPowerShellTDD.git"
+    ],
+    "student_count": 2,
+    "setup_instructor": true,
+    "pwd": "abc123"
+}
