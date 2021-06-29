@@ -1,0 +1,9 @@
+{
+    "image": "code-server-python3.3.10.2",
+    "repos":[ 
+	    "https://github.com/gartee-john-PFG/WorkshopPythonTDD.git"
+    ],
+    "student_count": 2,
+    "setup_instructor": true,
+    "pwd": "abc123"
+}
